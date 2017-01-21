@@ -1,0 +1,6 @@
+[source, bash]
+----
+ ./grailsw create-domain-class Announcement
+| Created grails-app/domain/demo/Announcement.groovy
+| Created src/test/groovy/demo/AnnouncementSpec.groov
+----

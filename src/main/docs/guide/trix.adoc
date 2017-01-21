@@ -1,0 +1,36 @@
+
+https://trix-editor.org[Trix Editor] is an open-source rich text editor project developed
+by https://basecamp.com[Basecamp].
+
+____
+Compose beautifully formatted text in your web application. Trix is an editor for writing messages, comments, articles, and lists—the simple documents most web apps are made of. It features a sophisticated document model, support for embedded attachments, and outputs terse and consistent HTML.
+____
+
+To integrate into a Grails application:
+
+* Download the https://github.com/basecamp/trix/releases[latest stable release]. For this guide, we use version _0.10.0_
+* Copy _trix.js_ to _assets/javascripts/trix.js_
+* Copy _trix.css_ to _assets/javascripts/trix.css_
+* Add both assets to our main layout file.
+
+
+[source,groovy]
+./grails-app/views/layouts/main.gsp
+----
+include::{sourceDir}/grails-app/views/layouts/main.gsp[indent=0, lines=12..15]
+----
+
+
+Replace:
+
+[source,groovy]
+----
+<f:all bean="announcement"/>
+----
+
+
+[source,groovy]
+./grails-app/views/layouts/main.gsp
+----
+include::{sourceDir}/grails-app/views/layouts/main.gsp[indent=0, lines=12..15]
+----

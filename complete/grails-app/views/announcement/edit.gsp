@@ -29,7 +29,14 @@
             <g:form resource="${this.announcement}" method="PUT">
                 <g:hiddenField name="version" value="${this.announcement?.version}" />
                 <fieldset class="form">
-                    <f:all bean="announcement"/>
+                    <f:field property="title" bean="announcement"/>
+                    <div class="fieldcontain required">
+                        <label for="message">
+                            <g:message code="announcement.message" default="Message"/>
+                            <span class="required-indicator">*</span>
+                        </label>
+                        <trix:editor name="message" value="${announcement.message}"/>
+                    </div>
                 </fieldset>
                 <fieldset class="buttons">
                     <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
