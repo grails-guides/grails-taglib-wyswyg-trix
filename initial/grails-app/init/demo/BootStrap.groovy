@@ -1,4 +1,4 @@
-package grails.taglib.wyswyg.trix
+package demo
 
 class BootStrap {
 

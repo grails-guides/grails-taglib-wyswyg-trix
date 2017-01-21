@@ -1,4 +1,4 @@
-package grails.taglib.wyswyg.trix
+package demo
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration
