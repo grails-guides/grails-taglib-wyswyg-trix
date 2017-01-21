@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="application.css"/>
-    <asset:stylesheet src="trix.css"/>
-    <asset:javascript src="trix.js"/>
     <g:layoutHead/>
 </head>
 <body>
