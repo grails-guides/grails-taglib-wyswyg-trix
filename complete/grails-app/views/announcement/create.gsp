@@ -27,7 +27,7 @@
             </g:hasErrors>
             <g:form action="save">
                 <fieldset class="form">
-                    <f:field property="title" bean="announcement"/>
+                    <f:all bean="announcement" except="message"/>                    
                     <div class="fieldcontain required">
                         <label for="message">
                             <g:message code="announcement.message" default="Message"/>

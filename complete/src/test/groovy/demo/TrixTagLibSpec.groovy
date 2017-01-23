@@ -12,7 +12,7 @@ class TrixTagLibSpec extends Specification {
     void "test trix editor markup is created"() {
         when:
         def expected = '''<input id="x" type="hidden" name="content" value="Editor content goes here" /><trix-editor input="x"></trix-editor>'''
-        def output = applyTemplate('<trix:editor name="content" id="x" value="Editor content goes here"/>')
+        def output = applyTemplate('<trix:editor name="content" id="x" value="Editor content goes here"/>') // <1>
 
         then:
         output == expected
@@ -23,6 +23,6 @@ class TrixTagLibSpec extends Specification {
         def expected = '''<input id="messsage" type="hidden" name="messsage" /><trix-editor input="messsage"></trix-editor>'''
 
         expect:
-        tagLib.editor(name: 'messsage') == expected
+        tagLib.editor(name: 'messsage') == expected // <2>    
     }
 }
