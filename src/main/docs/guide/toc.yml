@@ -5,7 +5,7 @@ gettingStarted:
 writingTheApp:
   title: Writing the Application
   domainClass: Domain Class
-  scaffolding: Scaffoling
+  scaffolding: Scaffolding
   trix: Downloading Trix
   taglib: Writing the Taglib
   useTaglib: Use the Taglib
