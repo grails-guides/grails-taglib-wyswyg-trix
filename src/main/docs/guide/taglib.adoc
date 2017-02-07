@@ -2,7 +2,7 @@ include::{commondir}/common-quoteTagLib.adoc[]
 
 [source,groovy]
 ----
-./grailsw create-tag-lib Trix
+./grailsw create-taglib Trix
 ----
 
 The TagLib https://github.com/basecamp/trix#integrating-with-forms[integrates Trix with forms] as described in their documentation:
