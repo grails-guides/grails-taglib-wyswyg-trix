@@ -11,3 +11,5 @@ writingTheApp:
   useTaglib: Use the Taglib
 runningTheApp:
   title: Running the Application
+helpWithGrails:
+  title: Do you need help with Grails?
