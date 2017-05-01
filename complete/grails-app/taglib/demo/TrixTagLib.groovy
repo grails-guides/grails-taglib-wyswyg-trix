@@ -1,8 +1,8 @@
 package demo
 
 class TrixTagLib {
-    static namespace = "trix" // <1>
-    static defaultEncodeAs = [taglib:'text'] // <2>
+    static namespace = 'trix' // <1>
+    static defaultEncodeAs = [taglib: 'text'] // <2>
 
     def editor = { attrs, body ->
         def id = attrs.id ?: attrs.name
@@ -11,7 +11,7 @@ class TrixTagLib {
         if ( attrs.value ) {
             out << " value=\"${attrs.value.encodeAsHTML()}\""  // <2>
         }
-        out << " />"
+        out << ' />'
         out << "<trix-editor input=\"${id}\"></trix-editor>"
     }
 }
