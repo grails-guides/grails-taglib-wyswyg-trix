@@ -1,14 +1,13 @@
 package demo
 
-import grails.test.mixin.TestFor
+import grails.testing.web.taglib.TagLibUnitTest
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.web.GroovyPageUnitTestMixin} for usage instructions
  */
 @SuppressWarnings(['LineLength', 'MethodName'])
-@TestFor(TrixTagLib)
-class TrixTagLibSpec extends Specification {
+class TrixTagLibSpec extends Specification implements TagLibUnitTest<TrixTagLib> {
 
     void 'test trix editor markup is created'() {
         when:
