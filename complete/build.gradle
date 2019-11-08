@@ -93,6 +93,6 @@ assets {
 }
 
 webdriverBinaries {
-    chromedriver '2.45'
+    chromedriver '77.0.3865.40'
     geckodriver '0.24.0'
 }
